@@ -1,4 +1,4 @@
-/*
+/* -----------------------------------------------------------------------------------------------------------------------------------
 # 1 - What to wear
 
 Create a function (that you have to name) that has temperature as parameter. Based on the temperature it should return a string with what the user should wear. You decide what the user should wear based on the temperature.
@@ -6,26 +6,29 @@ Create a function (that you have to name) that has temperature as parameter. Bas
 
 function clothesChooser(degreesCelcius) {
     if (degreesCelcius < 0) {
-        return `Wear long clothes along with boots, warm coat and gloves`
+        return `Wear long clothes along with boots, warm coat and gloves`;
     }
     else if (degreesCelcius < 10) {
-        return `Wear long pants and a long shirt along with a warm jacket and gloves`
+        return `Wear long pants and a long shirt along with a warm jacket and gloves`;
     }
     else if (degreesCelcius < 17) {
-        return `Wear pants and t-shirt and bring a hoodie or warmer shirt too`
+        return `Wear pants and t-shirt and bring a hoodie or warmer shirt too`;
     }
     else if (degreesCelcius < 20) {
-        return `Wear shorts and a t-shirt`
+        return `Wear shorts and a t-shirt`;
     }
     if (degreesCelcius < 30) {
-        return `Wear light and breathable clothes`
+        return `Wear light and breathable clothes`;
+    }
+    else {
+        return `It is way too hot today. Stay inside`
     }
 }
 const clothesToWear = clothesChooser(18);
 
 console.log(clothesToWear); // Logs out: "shorts and a t-shirt"
 
-/*
+/* -----------------------------------------------------------------------------------------------------------------------------------
 # 2 - Dice game 🎲
 
 Write a function that simulates a dice roll. You call the function with the number of times you would like to roll the dice.
@@ -65,7 +68,7 @@ function rollTheDice2(throws) {
 
 rollTheDice2(1);
 
-/*
+/* -----------------------------------------------------------------------------------------------------------------------------------
 # 3 - Build a sentiment analyser
 
 A sentiment analyser is some functionality that figures out how positive/negative a sentence is.
@@ -103,7 +106,7 @@ const sentimentScoreObject = getSentimentScore('I am mega super awesome happy');
 
 console.log(sentimentScoreObject);
 
-/*
+/* -----------------------------------------------------------------------------------------------------------------------------------
 # 4 - Character frequencies - optional
 
 Write a function that counts the frequency of characters in a string:
@@ -136,7 +139,7 @@ function getCharacterFrequencies(string) {
 
 console.log(getCharacterFrequencies('happy'));
 
-/*
+/* -----------------------------------------------------------------------------------------------------------------------------------
 # 5 - Credit card number formatter - optional
 
 This is a very real world example of a problem i got at my previous work. I was tasked to implement one of the smart credit card input fields, where the credit card numbers are seperated with a space. Fx inputting 123456789 would show 1234 5678 9.
